@@ -1,0 +1,151 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 92px 10px 82px 10px;
+    font-size: 13px;
+}
+
+h1, h2 {
+    color: var(--dark-blue);
+}
+
+p {
+    color: var(--grayish-blue);
+}
+
+header h1:first-of-type {
+    font-weight: 200;
+}
+
+header p {
+    padding: 26px 10px;
+    font-size: 17px;
+}
+
+.cards h2 {
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.cards p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.box {
+    width: 312px;
+    height: 219px;
+    padding: 28px;
+    margin: 0 32px 28px 32px;
+    position: relative;
+    border-radius: 5px;
+}
+
+/* Utilities */
+.card-image {
+    width: 59px;
+    position: absolute;
+    right: 28px;
+    bottom: 28px;
+}
+
+.cyan {
+    box-shadow: 0 -4px 0 var(--cyan), 0 0 20px 0 var(--grayish-blue);
+}
+
+.red {
+    box-shadow: 0 -4px 0 var(--red), 0 0 20px 0 var(--grayish-blue);
+}
+
+.orange {
+    box-shadow: 0 -4px 0 var(--orange), 0 0 20px 0 var(--grayish-blue);
+}
+
+.blue {
+    box-shadow: 0 -4px 0 var(--blue), 0 0 20px 0 var(--grayish-blue);
+}
+
+@media (min-width: 376px) and (max-width: 767px) {
+    header {
+        font-size: 15px;
+        width: 505px;
+        margin: auto;
+        padding: 52px 10px 12px 10px;
+    }
+
+    .cyan, .red, .orange, .blue {
+        margin: 50px auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1079px) {
+    header {
+        font-size: 15px;
+        width: 600px;
+        margin: auto;
+        padding: 52px 10px 0 10px;
+    }
+
+    .cyan, .blue {
+        margin: 40px auto;
+    }
+
+    .middle-box {
+        display: flex;
+        margin-top: 65px;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1366px) {
+    header {
+        font-size: 15px;
+        width: 600px;
+        margin: auto;
+        padding: 52px 10px 22px 10px;
+    }
+
+    .cards {
+        width: 1112px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    header {
+        font-size: 15px;
+        width: 600px;
+        margin: auto;
+        padding: 89px 0 39px 0;
+    }
+
+    .cards {
+        width: 1112px;
+        display: flex;
+        margin: auto;
+        padding-bottom: 50px;
+        align-items: center;
+    }
+}
